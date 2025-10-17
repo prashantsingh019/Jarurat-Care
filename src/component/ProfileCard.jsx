@@ -2,15 +2,14 @@ const ProfileCard = ({ data }) => {
     
 
     const {firstName, lastName, age, gender, bloodGroup, height, weight, eyeColor, phone, email, address: { address: street, city, state, postalCode } = {},  } = data;
-    console.log("Hello")
-
+    
     return (
-        <div className="card-body max-h-[500px] rounded-xl pb-10 pt-10">
+        <div className="card-body lg:max-h-[500px] rounded-xl pb-10 pt-10">
             <div className="top w-[90%] m-auto">
                 <h1 className="text-3xl">{`${firstName} ${lastName}`}</h1>
                 <h2 className="text-xl text-gray-400 font-light">{`${city},${state}`}</h2>
             </div>
-            <div className="details flex m-auto w-[90%] gap-4 pt-5">
+            <div className="details sm:flex-col lg:flex-row flex m-auto w-[90%] lg:gap-4 sm:gap-0 pt-5">
                 <div className="div-left mr-2 py-8 text-xl w-[48%] border px-2 rounded border-gray-100">
                     <h3 className="flex justify-between"> <span>Age</span>              <span className="font-light"> {age}</span> </h3>
                     <h3 className="flex justify-between"> <span>Gender</span>           <span className="font-light"> {gender}</span> </h3>
