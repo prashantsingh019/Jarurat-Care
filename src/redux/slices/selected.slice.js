@@ -12,5 +12,5 @@ const selectedUserSlice = createSlice({
     }
 })
 
-export const {selectUser} = selectedUserSlice.actions;
+export const { selectUser } = selectedUserSlice.actions;
 export default selectedUserSlice.reducer;
