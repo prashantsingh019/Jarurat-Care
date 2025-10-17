@@ -21,7 +21,7 @@ function Navbar() {
           onChange={(e) => dispatch(sendQuery(e.target.value))}
         />
       </div>
-      <ul className="lg:flex items-center gap-10 text-lg sm:hidden ">
+      <ul className="lg:flex items-center gap-10 text-lg sm:hidden hidden">
         <li onClick={handleClick} className="hover:underline cursor-pointer">
           Home
         </li>

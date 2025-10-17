@@ -7,7 +7,7 @@ const Card = ({ user }) => {
      navigate(`user/${id}`);
     }
     return (
-        <div className="card-body m-w-[10%] lg:w-[15%] h-[220px] rounded-2xl p-2 flex flex-col justify-between shadow-xl border-t-8 border-blue-400 sm:w-[40%]">
+        <div className="card-body m-w-[50px] lg:w-[15%] h-[220px] rounded-2xl p-2 flex flex-col justify-between shadow-xl border-t-8 border-blue-400 sm:w-[40%]">
             <div className="text-section">
                 <h1 className="text-xl">{`${firstName} ${lastName}`}</h1>
                 <h2 className="">Age: {`${age}`}</h2>
