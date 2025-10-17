@@ -1,11 +1,18 @@
+import { useParams } from "react-router-dom";
 import ProfileCard from "./ProfileCard";
 import { useSelector } from "react-redux";
+
 function SelectedUser() {
+    const param = useParams();
+    const {id} = param;
     const data = useSelector((state) => state.patients);
-    return <div>
+    const filteredUser = data.filter((user)=>user.id == id);
+    
+    
+    return <div className="bg-gray-100 mt-5 rounded-2xl shadow">
 
         {
-            data.map((user) => {
+            filteredUser.map((user) => {
                 return <ProfileCard data={user} key={user.id} />
             })
         }
