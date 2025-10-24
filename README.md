@@ -31,3 +31,5 @@ A responsive React web application for managing patients and viewing a gallery. 
 ```bash
 git clone https://github.com/yourusername/jarurat-care.git
 cd jarurat-care
+
+Live Link : https://fancy-starlight-367ff1.netlify.app/
